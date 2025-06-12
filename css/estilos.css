@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../img/fondo1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    /* background: #ffffff; Blanco puro */
+    color: #333333;       /* Texto principal */
+}
+
+header {
+    background: #0a9a9e; /* Teal oscuro */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(10, 154, 158, 0.3);
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 5.5rem;
+    color: #ffffff;
+}
+
+nav {
+    background: #0cb3b7; /* Teal medio */
+    box-shadow: 0 4px 6px rgba(12, 179, 183, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    gap: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 11px 21px;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+    background: #0a9a9e;
+}
+
+nav a:hover {
+    background: #333333;
+}
+
+main {
+    
+    padding: 40px 20px;
+    max-width: 700px;
+    margin: auto;
+}
+
+section {
+    background: #f5f5f5; /* Gris muy claro (alternativa visual) */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(10, 154, 158, 0.1);
+    margin-top: 20px;
+}
+
+section h2 {
+    color: #0a9a9e;
+    margin-bottom: 15px;
+}
+
+footer {
+    background: #aaaaaa; /* Gris medio */
+    color: #0cb3b7;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+    margin-top: 40px;
+
+}
+form{
+    border: 2px solid;
+    padding: 20px;
+    width: 550px;
+    margin: auto;
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: 12px 12px 2px 1px rgba(86, 218, 216, 0.5);
+}
+
+/* .NombreApellido{
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    margin-bottom: 15px;
+    background-color: #0cb3b7;
+} */
+
+/* .NombreApellido input{
+background-color: #0cb3b7;
+} */
+
+
+.Edad{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+    background-color: #0cb3b7;
+    border-radius: 5px;
+}
+
+.Edad input{
+    width: 280px;   
+    height: 25px;
+    margin-left: -10px;
+    border-radius: 5px;
+}
+.Etiquetas{
+    display: flex;
+    flex-direction: column;
+    background-color: #0cb3b7;
+    gap: 5px;
+    border-radius: 5px;
+}
+
+.Etiquetas input{
+    width: 280px;   
+    height: 25px;
+    margin-left: -10px;
+    border-radius: 5px;
+    
+}
+.Preferencias{
+    display: flex;
+    gap: 20;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    background-color: #0cb3b7;
+    border-radius: 5px;
+
+}
+.Preferencias input{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    gap: 13.5;
+    border-radius: 5px;
+}
+
+
+label{
+    width: 150px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+input{
+    width: 200px;
+    height: 25px;
+}
+
+/* Responsive */
+@media (max-width: 786px) {
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
